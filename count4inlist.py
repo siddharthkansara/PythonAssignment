@@ -7,3 +7,5 @@ numbers = list(map(int,input().split(' ')))
 four = numbers.count(4)
 
 print('No of 4 in list are : ' + str(four))
+
+print(numbers)
