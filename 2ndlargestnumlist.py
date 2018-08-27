@@ -6,4 +6,5 @@ a.sort()
 
 del a[-1]
 
+print(a)
 print(a[-1])
