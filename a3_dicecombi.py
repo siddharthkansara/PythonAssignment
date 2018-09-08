@@ -1,9 +1,19 @@
-# All Dice Combinations. Write a list comprehension that uses nested for-clauses to create a single list with 
-# all 36 different dice combinations from (1,1) to (6,6).
+#dice 6*6*6
+
+
+from collections import Counter,OrderedDict
 
 
 a = [1,2,3,4,5,6]
 
-c = [(n,x) for n in a for x in a]
+c = [(n,x,y) for n in a for x in a for y in a]
 
-print(c)
+#print(c)
+
+d = list(map(lambda i: sum(i),c))
+
+e = Counter(d)
+
+print(e)
+
+print(OrderedDict(sorted(e.items())))
